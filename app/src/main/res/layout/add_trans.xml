@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/editTextTrans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:hint="Enter Transaction"
+        android:maxLines="1"
+        android:inputType="number"
+        android:imeOptions="actionDone">
+
+        <requestFocus />
+    </EditText>
+    <RadioGroup
+        android:id="@+id/trans_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTrans"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true">
+        <RadioButton
+            android:id="@+id/withdrawRBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Withdraw"/>
+        <RadioButton
+            android:id="@+id/depositRBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deposit"
+            />
+    </RadioGroup>
+
+
+</RelativeLayout>

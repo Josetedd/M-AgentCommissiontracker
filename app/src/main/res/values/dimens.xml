@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="HTile_marginTop">8dp</dimen>
+    <dimen name="imageSize">60dp</dimen>
+</resources>

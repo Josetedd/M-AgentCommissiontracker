@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.joseph.m_agentcommissiontracker.MainActivity">
+<!--add transction-->
+    <LinearLayout
+        style="@style/homeTiles"
+        android:layout_marginTop="@dimen/HTile_marginTop">
+        <ImageView
+            style="@style/homeIcon"
+            android:src="@drawable/add_icon"
+            />
+        <RelativeLayout
+            android:id="@+id/add_transRL"
+            style="@style/HtileTextholder"
+            >
+            <TextView
+                android:text="Add Transctions"
+                style="@style/bigTextView"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <!--todays transactions-->
+    <LinearLayout
+        style="@style/homeTiles"
+        android:layout_marginTop="@dimen/HTile_marginTop">
+        <ImageView
+            style="@style/homeIcon"
+            android:src="@drawable/today_icon"
+            />
+        <RelativeLayout
+            style="@style/HtileTextholder"
+            android:id="@+id/todays_transRL"
+            >
+        <TextView
+            android:text="Todays Transctions"
+            style="@style/bigTextView"/>
+            <TextView
+                android:id="@+id/today_count"
+                android:text="0"
+                style="@style/countTextView"/>
+            <TextView
+                android:text="tap to view transactions"
+                style="@style/viewTransTextView"
+                />
+    </RelativeLayout>
+
+    </LinearLayout>
+    <!-- weekly transactions-->
+    <LinearLayout
+        style="@style/homeTiles"
+        android:layout_marginTop="@dimen/HTile_marginTop">
+        <ImageView
+            style="@style/homeIcon"
+            android:src="@drawable/week_icon"
+            />
+        <RelativeLayout
+            style="@style/HtileTextholder"
+            >
+            <TextView
+                android:text="This weeks Trans"
+                style="@style/bigTextView"/>
+            <TextView
+                android:text="0"
+                style="@style/countTextView"/>
+            <TextView
+                android:text="tap to view this weeks report"
+                style="@style/viewTransTextView"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <!-- monthly transactions-->
+    <LinearLayout
+        style="@style/homeTiles"
+        android:layout_marginTop="@dimen/HTile_marginTop">
+        <ImageView
+            style="@style/homeIcon"
+            android:src="@drawable/month_icon"
+            />
+        <RelativeLayout
+            style="@style/HtileTextholder"
+            >
+            <TextView
+                android:text="This Months Trans"
+                style="@style/bigTextView"/>
+            <TextView
+                android:text="0"
+                style="@style/countTextView"/>
+            <TextView
+                android:text="tap to view this months report"
+                style="@style/viewTransTextView"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <!-- other reports-->
+    <LinearLayout
+        style="@style/homeTiles"
+        android:layout_marginTop="@dimen/HTile_marginTop">
+        <ImageView
+            style="@style/homeIcon"
+            android:src="@drawable/other_icon"
+            />
+        <RelativeLayout
+            style="@style/HtileTextholder"
+            >
+            <TextView
+                android:text="View other reports"
+                style="@style/bigTextView"/>
+
+            <TextView
+                android:text="tap to view other reportd"
+                style="@style/viewTransTextView"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <!--about-->
+    <LinearLayout
+        style="@style/homeTiles"
+        android:layout_marginTop="@dimen/HTile_marginTop">
+        <ImageView
+            style="@style/homeIcon"
+            android:src="@drawable/about_icon"
+            />
+        <RelativeLayout
+            style="@style/HtileTextholder"
+            >
+            <TextView
+                android:text="about/help"
+                style="@style/bigTextView"/>
+
+            <TextView
+                android:text="tap to view other reports"
+                style="@style/viewTransTextView"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
